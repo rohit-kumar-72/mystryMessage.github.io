@@ -39,7 +39,7 @@ function page() {
         isLoading: isSuggestLoading,
         error,
     } = useCompletion({
-        api: '/api/suggest-messges',
+        api: '/api/googleapi',
         initialCompletion: initialMessageString,
     });
 
@@ -141,7 +141,7 @@ function page() {
                         className="my-4"
                         disabled={isSuggestLoading}
                     >
-                        Suggest Messages <span className='text-sm text-red-500'>(due to key expiry of gpt used it is not working now *)</span>
+                        Suggest Messages <span className='text-sm text-red-500'>(due to key expiry of gpt used it may stop working sometime *)</span>
                     </Button>
                     <p>Click on any message below to select it.</p>
                 </div>
